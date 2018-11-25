@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-primary">Welcome, {{ user.username }} - {{ username }}</h2>
+
+    <ul>
+        {% for o in data %}
+            <li>{{o}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

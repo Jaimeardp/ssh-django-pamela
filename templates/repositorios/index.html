@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="row">
+	<!-- {{ user.username }} - {{ username }}-->
+	<h2 class="text-primary">Welcome {{ user.username }}</h2>
+	<div class="row col-12">
+	    <div class="col-12">
+		  <label for="command">Comando</label>
+		  <input id="dataCommand" name="command" type="text" required/>	   
+	    </div>
+	    <div class="col-12">
+		<button id="sendCommand" class="btn btn-primary">Submit</button>
+	    </div>
+	</div>
+	<div class="col-12">
+		<ul id="hereText">
+		</ul>
+	</div>
+    </div>
+    
+
+    <!--<a href="{% url 'repositorio_connect' %}">Connection</a>
+    <a href="{% url 'repositorio_consultar' %}">Consultar</a>
+    {% load static %}
+
+    <div class="card-columns">
+        {% for o in data %}
+            <div class="card shadow">
+                <img class="card-img-top img-fluid" src="{{o.img.url}}" alt="white rabbit">
+                <div class="card-body">
+                  <h4 class="card-title">{{o.name}}</h4>
+                   <a href="#" class="btn btn-success btn-block mt-2">Read Chapter IV</a>
+              </div>
+           </div>
+        {% endfor %}
+    </div>-->
+    
+{% endblock %}
